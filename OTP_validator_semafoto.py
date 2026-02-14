@@ -115,8 +115,8 @@ class SemaforoOTP:
         try:
             server = smtplib.SMTP('smtp.gmail.com', 587)
             server.starttls()
-            from_email = 'janielphills@gmail.com'
-            server.login(from_email, 'jezt mvie mxji rslz')
+            from_email = 'Coloca tu correo @gmail.com'
+            server.login(from_email, 'Coloca tu contraseña de aplicacion creada en myaccount.google.com/apppasswords')
             
             msg = EmailMessage()
             msg['Subject'] = "OTP Verification"
@@ -155,4 +155,5 @@ class SemaforoOTP:
 # Iniciar aplicación
 if __name__ == "__main__":
     app = SemaforoOTP()
+
     app.iniciar()
